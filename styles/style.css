@@ -68,7 +68,7 @@ address {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  padding: 165px 50px 50px 50px;
+  padding: 165px 50px 0 50px;
 }
 
 .overlay {
@@ -87,7 +87,7 @@ address {
   color: #fff;
   position: relative;
   z-index: 1;
-  margin-bottom: 147px;
+  margin-bottom: 136px;
 }
 
 .aligned-text {
@@ -114,7 +114,11 @@ address {
 .cover__description {
   position: relative;
   margin-left: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 .cover__description-text {
   font-weight: normal;
   font-size: 22px;
@@ -122,12 +126,24 @@ address {
   text-transform: uppercase;
   color: #fff;
   word-spacing: 19px;
-  text-align: justify;
+}
+
+.cover__description-button {
+  display: flex;
+  padding: 12px 32px 11px 31px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
 }
 
 .lots {
   padding: 0 24px 146px;
 }
+
 .lots__heading {
   font-weight: 700;
   font-size: 40px;
@@ -142,6 +158,7 @@ address {
   gap: 25px;
   margin-bottom: 30px;
 }
+
 .card-link {
   display: block;
   text-decoration: none;
@@ -197,3 +214,56 @@ address {
   border-bottom: 1px solid black;
   margin: 0 0 0 40px;
 }
+
+.about {
+  padding: 35px 0 0 0;
+  margin: 0 24px 180px 24px;
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  grid-auto-rows: minmax(240px, auto);
+  column-gap: 25px;
+}
+
+.about__logo {
+  width: 240px;
+  height: 240px;
+  border-radius: 100%;
+  background-color: black;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about__logo-image {
+  height: 112.55px;
+  width: 141.54px;
+}
+
+.about__content {
+  place-self: center left;
+}
+
+.about__content-title {
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #000;
+  }
+
+  .about__content-text {
+    grid-column-start: 2;
+  }
+
+.about__content-text p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  color: #000;
+  margin-bottom: 24px;
+}
+
+.about__content-text:last-of-type {
+  margin-bottom: 0;
+}
+
