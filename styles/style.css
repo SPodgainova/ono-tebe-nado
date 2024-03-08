@@ -1,19 +1,15 @@
 header {
   margin: 92px 24px 96px;
-  min-height: 105px;
-  padding: 0 24px;
-  display: flex;
-  flex-direction: row;
-  flex: 0 0 auto; 
-  gap:20px;
-  justify-content: space-between;
-
+  display: grid;
+  grid-template-columns: 452px 148px 452px;
+  grid-auto-rows: minmax(105px, auto);
 }
 
 .header__menu {
   font-weight: 400;
   font-size: 18px;
   letter-spacing: 0.01em;
+  padding: 0 0 0 25px;
   align-self: center;
 }
 
@@ -37,25 +33,26 @@ header {
 }
 
 .header__logo {
+  place-self: center center;
+}
+
+.header__logo-image {
   width: 129.11px;
   height: 104.65px;
-  position: relative;
-  left: -75px;
 }
 
 .header__info {
   font-weight: 400;
   font-size: 18px;
   line-height: 135%;
-  min-width: 240.52px;
-  align-self: end;
+  place-self: center;
+  padding-left: 117px;
 }
 
-.header__info-link{
+.header__info-link {
   text-decoration: none;
   border-bottom: 1px solid black;
 }
-
 
 address {
   margin: 0;
@@ -63,5 +60,9 @@ address {
   font-style: normal;
 }
 
-
-
+.cover {
+  height: 757px;
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 179px;
+}
