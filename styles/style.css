@@ -1,8 +1,8 @@
 .header {
-  padding: 92px 50px 96px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   grid-auto-rows: minmax(105px, auto);
+  padding: 92px 50px 96px;
 }
 
 .header__menu {
