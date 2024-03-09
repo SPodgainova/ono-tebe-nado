@@ -1,7 +1,7 @@
 header {
-  margin: 92px 24px 96px;
+  padding: 92px 50px 96px;
   display: grid;
-  grid-template-columns: 452px 148px 452px;
+  grid-template-columns: 1fr min-content 1fr;
   grid-auto-rows: minmax(105px, auto);
 }
 
@@ -9,7 +9,6 @@ header {
   font-weight: 400;
   font-size: 18px;
   letter-spacing: 0.01em;
-  padding: 0 0 0 25px;
   align-self: center;
 }
 
@@ -45,8 +44,8 @@ header {
   font-weight: 400;
   font-size: 18px;
   line-height: 135%;
-  place-self: center;
-  padding-left: 117px;
+  place-self: center right;
+  padding-right: 46px;
 }
 
 .header__info-link {
@@ -241,6 +240,7 @@ address {
 
 .about__content {
   place-self: center left;
+  grid-column-start: 2;
 }
 
 .about__content-title {
@@ -248,20 +248,17 @@ address {
   font-size: 40px;
   text-transform: uppercase;
   color: #000;
+  align-self: center;
   }
 
   .about__content-text {
-    grid-column-start: 2;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: #000;
+    margin-bottom: 24px;
   }
-
-.about__content-text p {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 120%;
-  letter-spacing: 0.01em;
-  color: #000;
-  margin-bottom: 24px;
-}
 
 .about__content-text:last-of-type {
   margin-bottom: 0;
