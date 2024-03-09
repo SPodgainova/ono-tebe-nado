@@ -41,33 +41,36 @@ header {
 }
 
 .header__info {
+  place-self: center right;
   font-weight: 400;
   font-size: 18px;
   line-height: 135%;
-  place-self: center right;
+  letter-spacing: 0.01em;
   padding-right: 46px;
 }
 
 .header__info-link {
   text-decoration: none;
   border-bottom: 1px solid black;
+  letter-spacing: 0.01em;
 }
 
 address {
   margin: 0;
   padding: 0;
   font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 135%;
 }
 
 .cover {
-  height: 757px;
-  margin-bottom: 179px;
   background-image: url(../images/cover.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  padding: 165px 50px 0 50px;
+  padding: 165px 50px 50px;
 }
 
 .overlay {
@@ -97,13 +100,17 @@ address {
 }
 
 .aligned-text_center {
-  margin-left: 286px;
+  text-align: center;
   line-height: 100%;
 }
 
 .aligned-text_right {
-  margin-left: 583px;
+  text-align: right;
   line-height: 100%;
+}
+
+.letter-spacing {
+  letter-spacing: 0;
 }
 
 .letter-spacing-extended {
@@ -112,9 +119,9 @@ address {
 
 .cover__description {
   position: relative;
-  margin-left: 28px;
   display: flex;
-  justify-content: space-between;
+  gap: 79px;
+  justify-content: end;
   align-items: center;
 }
 
@@ -129,7 +136,7 @@ address {
 
 .cover__description-button {
   display: flex;
-  padding: 12px 32px 11px 31px;
+  padding: 12px 32px;
   border: 1px solid #ffffff;
   background-color: transparent;
   font-weight: 500;
@@ -137,10 +144,11 @@ address {
   text-transform: uppercase;
   text-align: center;
   color: #fff;
+  text-wrap: nowrap;
 }
 
 .lots {
-  padding: 0 24px 146px;
+  padding: 179px 24px 180px;
 }
 
 .lots__heading {
@@ -215,8 +223,7 @@ address {
 }
 
 .about {
-  padding: 35px 0 0 0;
-  margin: 0 24px 180px 24px;
+  padding: 0 24px 180px;
   display: grid;
   grid-template-columns: 334px 1fr;
   grid-auto-rows: minmax(240px, auto);
@@ -249,18 +256,72 @@ address {
   text-transform: uppercase;
   color: #000;
   align-self: center;
-  }
+}
 
-  .about__content-text {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 120%;
-    letter-spacing: 0.01em;
-    color: #000;
-    margin-bottom: 24px;
-  }
+.about__content-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  color: #000;
+  margin-bottom: 24px;
+}
 
 .about__content-text:last-of-type {
   margin-bottom: 0;
 }
 
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3 1fr);
+  grid-template-areas: "footer__info footer__menu footer__social-list";
+  align-items: ;
+  padding: 0 50px 88px;
+}
+
+.footer__info {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 135%;
+  letter-spacing: 0.01em;
+  padding-right: 46px;
+}
+
+.footer__info-link {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  letter-spacing: 0.01em;
+}
+
+.footer__menu {
+  justify-self: center;
+}
+
+.footer__social-list {
+  justify-self: end;
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  list-style: none;
+}
+
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.footer__menu-list {
+  list-style: none;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #000;
+}
+.footer__menu-link {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+.footer__menu-link_active {
+  border-bottom: none;
+}
