@@ -196,6 +196,7 @@ address {
 }
 
 .card__text {
+  font-weight: 400;
   font-size: 20px;
   line-height: 120%;
   color: #fff;
@@ -275,7 +276,6 @@ address {
   display: grid;
   grid-template-columns: repeat(3 1fr);
   grid-template-areas: "footer__info footer__menu footer__social-list";
-  align-items: ;
   padding: 0 50px 88px;
 }
 
