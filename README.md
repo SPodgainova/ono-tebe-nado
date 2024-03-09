@@ -1,0 +1,1 @@
+git@github.com:SPodgainova/ono-tebe-nado.git
