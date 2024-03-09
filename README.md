@@ -1,1 +1,1 @@
-git@github.com:SPodgainova/ono-tebe-nado.git
+https://github.com/SPodgainova/ono-tebe-nado.git
