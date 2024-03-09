@@ -312,9 +312,9 @@ address {
 
 .footer__menu-list {
   list-style: none;
+  text-align: center;
   font-weight: 400;
   font-size: 18px;
-  text-align: center;
   color: #000;
 }
 .footer__menu-link {
