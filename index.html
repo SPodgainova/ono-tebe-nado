@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-    <link rel="fontsdheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
@@ -13,8 +13,8 @@
     <header class="header">
       <nav class="header__menu">
         <ul class="header__menu-list">
-          <li class="header__menu-item header__menu-item_active">
-            <a class="header__menu-link" href="#0">главная</a>
+          <li class="header__menu-item header__menu-item_no-bullit">
+            <a class="header__menu-link header__menu-link_active " href="#0">главная</a>
           </li>
           <li class="header__menu-item">
             <a class="header__menu-link" href="#0">посмотреть лоты</a>
@@ -29,18 +29,13 @@
           class="header__logo-image"
           src="./images/logo-black.svg"
           alt="логотип оно тебе надо"
-        >
+        />
       </a>
-      <div class="header__info">
-        <a class="header__info-link" href="tel:+99995555555"
-          >+9 999 555 5555<br></a>
-        <a class="header__info-link" href="mailto:info@sobaka.ge"
-          >info@sobaka.ge</a
-        >
-        <address class="header__addres">
-          наб. Принсенграхт 263-<br>265, Амстердам
-        </address>
-      </div>
+      <address class="address header__address"> 
+        <a class="address__link" href="tel:+99995555555"> +9 999 555 5555<br/></a>
+        <a class="address__link" href="mailto:info@sobaka.ge"> info@sobaka.ge </a>
+        <p class="address__text"> наб. Принсенграхт 263-<br />265, Амстердам </p>
+     </address>
     </header>
     <main>
       <section class="cover">
@@ -58,17 +53,15 @@
           >
         </h1>
         <div class="cover__description">
-          <div class="cover__description-text">
-            <p>Аукцион вещей, в которые никто не верил</p>
-          </div>
-          <button class="cover__description-button">Сделать ставку</button>
+             <p class="cover__description-text">Аукцион вещей, в которые никто не верил</p>
+          <button type="button" class="cover__description-button">Сделать ставку</button>
         </div>
       </section>
       <section class="lots">
         <h2 class="lots__heading">Лоты</h2>
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
-            <a class="card-link" href="#0"></a>
+            <a class="card-link" href="#0">
             <article class="card card_type_film">
               <h3 class="card__title">
                 Фильм режиссёра, который бросил киношколу
@@ -78,10 +71,10 @@
                 ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
               </p>
               <div class="overlay"></div>
-            </article>
+            </article></a>
           </li>
           <li class="lots__card-list-item">
-            <a class="card-link" href="#0"></a>
+            <a class="card-link" href="#0">
             <article class="card card_type_book">
               <h3 class="card__title">
                 Книга, где описан один скучный день из жизни рекламного агента
@@ -95,10 +88,10 @@
                 Джойса?
               </p>
               <div class="overlay"></div>
-            </article>
+            </article></a>
           </li>
           <li class="lots__card-list-item">
-            <a class="card-link" href="#0"></a>
+            <a class="card-link" href="#0">
             <article class="card card_type_picture">
               <h3 class="card__title">
                 Картина, которую повторит даже 5-летний сын маминой подруги
@@ -110,7 +103,7 @@
                 что это — одна из революционных работ Кандинского?
               </p>
               <div class="overlay"></div>
-            </article>
+            </article></a>
           </li>
         </ul>
         <a href="#0" class="lots__link"> посмотреть больше </a>
@@ -170,7 +163,7 @@
       </nav>
       <ul class="footer__social-list">
         <li class="footer__social-list-item">
-          <a href="" class="footer__social-link">
+          <a href="#0" class="footer__social-link">
             <img
               class="footer__social-icon"
               src="./images/yt.svg"

@@ -24,11 +24,11 @@
   text-decoration: none;
   border-bottom: 1px solid black;
 }
-.header__menu-item_active {
+.header__menu-item_no-bullit {
   list-style: none;
 }
 
-.header__menu-item_active .header__menu-link {
+.header__menu-link_active  {
   border-bottom: none;
 }
 
@@ -41,28 +41,22 @@
   height: 104.65px;
 }
 
-.header__info {
-  place-self: center right;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 135%;
-  letter-spacing: 0.01em;
-  padding-right: 46px;
-}
-
-.header__info-link {
-  text-decoration: none;
-  border-bottom: 1px solid black;
-  letter-spacing: 0.01em;
-}
-
-address {
-  margin: 0;
-  padding: 0;
+.address {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 135%;
+}
+
+.header__address {
+  justify-self: end;
+  margin-right: 36px;
+}
+
+.address__link {
+  text-decoration: none;
+  border-bottom: 1px solid #000;;
+  letter-spacing: 0.01em;
 }
 
 .cover {
@@ -96,13 +90,12 @@ address {
 .aligned-text {
   display: block;
   letter-spacing: 0.3em;
-  line-height: 115%;
-  margin-bottom: 20px;
 }
 
 .aligned-text_center {
   text-align: center;
   line-height: 100%;
+  margin: 20px 0;
 }
 
 .aligned-text_right {
@@ -170,6 +163,7 @@ address {
 .card-link {
   display: block;
   text-decoration: none;
+  height: 100%;
 }
 
 .card {
