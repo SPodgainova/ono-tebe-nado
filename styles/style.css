@@ -10,19 +10,20 @@
   font-weight: 400;
   font-size: 18px;
   letter-spacing: 0.01em;
-  
-}
+  }
 
 .header__menu-list {
   list-style: circle;
   display: flex;
   flex-direction: row;
   gap: 34px;
+  flex-wrap: wrap;
 }
 
 .header__menu-link {
   text-decoration: none;
   border-bottom: 1px solid black;
+  text-wrap: nowrap;
 }
 .header__menu-item_no-bullit {
   list-style: none;
@@ -84,7 +85,7 @@
   color: #fff;
   position: relative;
   z-index: 1;
-  margin-bottom: 136px;
+  margin-bottom: 130px;
 }
 
 .aligned-text {
@@ -138,6 +139,7 @@
   text-transform: uppercase;
   text-align: center;
   color: #fff;
+  font-family: inherit;
   text-wrap: nowrap;
 }
 
@@ -167,7 +169,7 @@
 }
 
 .card {
-  width: 334px;
+  max-width: 334px;
   height: 100%;
   padding: 51px 40px 48px;
   display: flex;
@@ -176,7 +178,7 @@
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: center;
+  background-position: center center;
   color: #fff;
 }
 
@@ -191,11 +193,17 @@
 }
 
 .card__text {
-  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1;
+}
+
+.card__text-item {
   font-size: 20px;
   line-height: 120%;
+  font-weight: 400;
   color: #fff;
-  z-index: 1;
 }
 
 .card_type_film {
@@ -269,17 +277,8 @@
 
 .footer {
   display: grid;
-  grid-template-columns: repeat(3 1fr);
-  grid-template-areas: "footer__info footer__menu footer__social-list";
+  grid-template-columns: repeat(3, 1fr);
   padding: 0 50px 88px;
-}
-
-.footer__info {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 135%;
-  letter-spacing: 0.01em;
-  padding-right: 46px;
 }
 
 .footer__info-link {
@@ -295,7 +294,7 @@
 .footer__social-list {
   justify-self: end;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   gap: 48px;
   list-style: none;
 }
